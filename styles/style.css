@@ -4,9 +4,31 @@
 
 h1,h2,h3{
 	text-align:center; color:white; 
+	font-weight:900;font-size:7em;margin-bottom:30px;text-shadow:2px 3px 0px #898999;line-height:1.2;
+	position: relative;top: 50px;
 }
 
 p {
   text-align:center; color: white;
-	font-weight:900;font-size:3.25em;margin-bottom:30px;text-shadow:2px 3px 0px #898999;line-height:1.2;
+	font-weight:900;font-size:7em;margin-bottom:30px;text-shadow:2px 3px 0px #898999;line-height:1.2;
+  position: relative;top: 50px;
+}
+
+body {
+	background: linear-gradient(-45deg, #0201f3, #5031ed, #704ee6, #8768de, #9a81d6, #a983ce, #b587c6, #bd8bbf, #cb77ad, #d76192, #dd4c6f, #da3c47);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
