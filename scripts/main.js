@@ -1,6 +1,8 @@
 // JavaScript Document
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 22, 2022 00:00:00").getTime();
+var countDownDate = new Date('Dec 22 2022 00:00:00 GMT+0800').getTime();
+
+var eventDate = 'Dec 22 2022 00:00:00 GMT+0800';
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -17,6 +19,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+  document.getElementById("line1").innerHTML = "COMING SOON"
   // Output the result in an element with id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
@@ -24,6 +27,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
 	clearInterval(x);
-	document.getElementById("demo").innerHTML = "EXPIRED";
+	document.getElementById("line1").innerHTML = "HAPPY BIRTHDAY!";
+	document.getElementById("demo").innerHTML = "2 7 2";
   }
 }, 1000);
