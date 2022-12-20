@@ -9,6 +9,28 @@
 	</style>
 	<title>happy-birthday</title>
 	<link href="styles/style.css" rel="stylesheet">
+	  <style>
+    .img {
+      width: 40px;
+      position: fixed;
+      top: -100px;
+      animation: down;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+    }
+    @keyframes down {
+      0% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(110vh);
+      }
+    }
+
+
+  </style>
+
 </head>
 
 <body>
@@ -17,11 +39,12 @@
 			background-image: linear-gradient(to left top,
 
 			#0201f3, #5031ed, #704ee6, #8768de, #9a81d6, #a983ce, #b587c6, #bd8bbf, #cb77ad, #d76192, #dd4c6f, #da3c47);"></div>
-<div class="center">
+
 	<h1 id="line1"></h1>
 	<p id="demo"></p>
-</div>
+
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet"> 
 	<script src="scripts/main.js" defer></script>
+
 </body>
 </html>

@@ -1,14 +1,15 @@
 // JavaScript Document
 // Set the date we're counting down to
-var countDownDate = new Date('Dec 22 2022 22:53:00 GMT+0800').getTime();
+var countDownDate = new Date('Dec 22 2022 22:03:26 GMT+0800').getTime();
 
-var eventDate = 'Dec 22 2022 00:00:00 GMT+0800';
+var eventDate = 'Dec 22 2022 22:03:26 GMT+0800';
 
 // Update the count down every 1 second
 var x = setInterval(function() {
 
   // Get today's date and time
   var now = new Date().getTime();
+
 
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
@@ -29,5 +30,10 @@ var x = setInterval(function() {
 	clearInterval(x);
 	document.getElementById("line1").innerHTML = "HAPPY BIRTHDAY!";
 	document.getElementById("demo").innerHTML = "5 7 1";
+	let clientWidth = document.body.clientWidth
+    let redbags = new Array(20).fill(0).forEach(x => {
+      document.body.innerHTML += `<img src="images/cake.png" class="img" style="animation-duration: ${Math.random()*2+3}s;left: ${Math.random()*clientWidth}px;" />`
+    })
   }
 }, 1000);
+
