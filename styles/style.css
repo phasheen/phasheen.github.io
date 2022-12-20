@@ -5,19 +5,19 @@
 h1,h2,h3{
 	text-align:center; color:white; 
 	font-weight:900;font-size:7em;margin-bottom:30px;text-shadow:2px 3px 0px #898999;line-height:1.2;
-	position: relative;top: 50px;
+	position: relative;top: 90px;
 }
 
 p {
   text-align:center; color: white;
 	font-weight:900;font-size:7em;margin-bottom:30px;text-shadow:2px 3px 0px #898999;line-height:1.2;
-  position: relative;top: 50px;
+  position: relative;top: 90px;
 }
 
 body {
-	background: linear-gradient(-45deg, #0201f3, #5031ed, #704ee6, #8768de, #9a81d6, #a983ce, #b587c6, #bd8bbf, #cb77ad, #d76192, #dd4c6f, #da3c47);
+	background: linear-gradient(-45deg, #0201f3,#0201f3,#0201f3,#0201f3,#0201f3,#0201f3,#0201f3, #5031ed, #704ee6, #8768de, #9a81d6, #a983ce, #b587c6, #bd8bbf, #cb77ad, #d76192, #dd4c6f, #da3c47,#da3c47,#da3c47,#da3c47,#da3c47, #da3c47,#da3c47);
 	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+	animation: gradient 90s ease infinite;
 	height: 100vh;
 }
 
@@ -32,3 +32,4 @@ body {
 		background-position: 0% 50%;
 	}
 }
+

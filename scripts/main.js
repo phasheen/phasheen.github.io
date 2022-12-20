@@ -1,6 +1,6 @@
 // JavaScript Document
 // Set the date we're counting down to
-var countDownDate = new Date('Dec 22 2022 00:00:00 GMT+0800').getTime();
+var countDownDate = new Date('Dec 22 2022 22:53:00 GMT+0800').getTime();
 
 var eventDate = 'Dec 22 2022 00:00:00 GMT+0800';
 
@@ -28,6 +28,6 @@ var x = setInterval(function() {
   if (distance < 0) {
 	clearInterval(x);
 	document.getElementById("line1").innerHTML = "HAPPY BIRTHDAY!";
-	document.getElementById("demo").innerHTML = "2 7 2";
+	document.getElementById("demo").innerHTML = "5 7 1";
   }
 }, 1000);
