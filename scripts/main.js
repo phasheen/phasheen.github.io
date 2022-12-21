@@ -1,6 +1,6 @@
 // JavaScript Document
 // Set the date we're counting down to
-var countDownDate = new Date('Dec 22 2022 22:03:26 GMT+0800').getTime();
+var countDownDate = new Date('Dec 22 2022 00:31:00 GMT+0800').getTime();
 
 var eventDate = 'Dec 22 2022 22:03:26 GMT+0800';
 
