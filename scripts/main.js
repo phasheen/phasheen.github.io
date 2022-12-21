@@ -26,7 +26,7 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
 
 	
-	var bgm = new Audio('music/song1.mp3');
+	var bgm = new Audio('music/song2.mp3');
 	bgm.loop = false;
 
   // If the count down is over, write some text 
