@@ -15,7 +15,6 @@ p {
 }
 
 body {
-	font-family:'Montserrat', sans-serif;font-weight:400;color:#fff;font-size:0.875em;letter-spacing:0.063em;
 	background: linear-gradient(-45deg, #0201f3,#0201f3,#0201f3,#0201f3,#0201f3,#0201f3,#0201f3, #5031ed, #704ee6, #8768de, #9a81d6, #a983ce, #b587c6, #bd8bbf, #cb77ad, #d76192, #dd4c6f, #da3c47,#da3c47,#da3c47,#da3c47,#da3c47, #da3c47,#da3c47);
 	background-size: 400% 400%;
 	animation: gradient 90s ease infinite;
