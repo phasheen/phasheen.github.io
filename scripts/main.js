@@ -25,10 +25,16 @@ var x = setInterval(function() {
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
+	var intro = new Audio('music/part1.mp3');
+	intro.loop = false;
 	
-	var bgm = new Audio('music/song2.mp3');
+	var bgm = new Audio('music/part2.mp3');
 	bgm.loop = false;
-
+	
+  if (seconds == 16) {
+	  intro.play();
+	  
+  }
   // If the count down is over, write some text 
   if (distance < 0) {
 	 bgm.play();
