@@ -1,0 +1,165 @@
+:root {
+	--paper: #fafaf7;
+	--ink: #1a1a1a;
+	--muted: #666666;
+	--line: #dddddd;
+	--link: #0033cc;
+	--visited: #551a8b;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: var(--paper);
+	color: var(--ink);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 1.6;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 64px 20px;
+}
+
+nav {
+	margin-bottom: 56px;
+	color: var(--muted);
+	font-size: 0.95rem;
+}
+
+nav a {
+	color: inherit;
+}
+
+.model-preview {
+	display: block;
+	position: relative;
+	aspect-ratio: 16 / 10;
+	margin-top: 12px;
+	overflow: hidden;
+	background: #050505;
+	border: 1px solid var(--line);
+}
+
+.model-preview iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+h1,
+h2,
+p,
+ul {
+	margin-top: 0;
+}
+
+h1 {
+	margin-bottom: 18px;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+h2 {
+	margin-bottom: 16px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+p {
+	margin-bottom: 16px;
+}
+
+ul {
+	margin-bottom: 0;
+	padding-left: 1.2rem;
+}
+
+li {
+	margin-bottom: 12px;
+}
+
+li:last-child {
+	margin-bottom: 0;
+}
+
+.contact-links {
+	display: flex;
+	gap: 12px;
+	padding-left: 0;
+	list-style: none;
+}
+
+.contact-links a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	color: var(--ink);
+}
+
+.contact-links svg {
+	width: 22px;
+	height: 22px;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.contact-links a[href*="github"] svg {
+	fill: currentColor;
+	stroke: none;
+}
+
+a {
+	color: var(--link);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.12em;
+}
+
+a:visited {
+	color: var(--visited);
+}
+
+a:focus-visible {
+	outline: 2px solid var(--link);
+	outline-offset: 3px;
+}
+
+hr {
+	margin: 34px 0;
+	border: 0;
+	border-top: 1px solid var(--line);
+}
+
+@media (max-width: 480px) {
+	html {
+		font-size: 16px;
+	}
+
+	main {
+		padding: 36px 18px;
+	}
+
+	nav {
+		margin-bottom: 40px;
+	}
+
+	.model-preview {
+		aspect-ratio: 4 / 3;
+	}
+}
