@@ -1,0 +1,27 @@
+- key: 3dgs-viewer
+  title: "3DGS Viewer"
+  title_zh: "3DGS Viewer"
+  type: "Interactive viewer"
+  type_zh: "交互式浏览器"
+  description: "A standalone web viewer for 3D Gaussian Splatting experiments, hosted separately from this homepage."
+  description_zh: "面向 3D Gaussian Splatting 实验的独立网页浏览器，和个人主页分开部署。"
+  links:
+    - label: "Overview"
+      label_zh: "项目简介"
+      url: "/projects/3dgs-viewer/"
+    - label: "Live site"
+      label_zh: "在线访问"
+      url: "https://3dgs.phasheen.com"
+      kind: "primary"
+
+- key: point-cloud-viewer
+  title: "Three.js Point-Cloud Viewer"
+  title_zh: "Three.js 点云浏览器"
+  type: "Standalone tool"
+  type_zh: "独立工具"
+  description: "A lightweight Three.js point-cloud inspection tool, kept outside the homepage repository as a separate deployable viewer."
+  description_zh: "一个轻量级 Three.js 点云检查工具，将作为独立 viewer 维护，而不是放进个人主页仓库。"
+  links:
+    - label: "Overview"
+      label_zh: "项目简介"
+      url: "/projects/point-cloud-viewer/"

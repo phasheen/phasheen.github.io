@@ -1,0 +1,14 @@
+- language: "Chinese"
+  language_zh: "中文"
+  level: "Native"
+  level_zh: "母语"
+
+- language: "English"
+  language_zh: "英语"
+  level: "IELTS 7.0 · 2021"
+  level_zh: "IELTS 7.0 · 2021"
+
+- language: "Korean"
+  language_zh: "韩语"
+  level: "Upper-intermediate"
+  level_zh: "中高级"

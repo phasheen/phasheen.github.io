@@ -1,0 +1,45 @@
+{% include base_path %}
+{% assign nav_links = site.data.navigation.main %}
+{% assign home_url = "/" %}
+{% assign current_lang = page.lang | default: site.locale | slice: 0, 2 %}
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><span class="navicon"></span></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == home_url or page.url == '/index.html' %}selected{% endif %}">
+            <a href="{{ base_path }}{{ home_url }}">{{ site.title }}</a>
+          </li>
+          {% for link in nav_links %}
+            {% assign shown_title = link.title %}
+            {% if current_lang == "zh" %}
+              {% assign shown_title = link.zh_title | default: link.title %}
+            {% endif %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+              <a href="{{ domain }}{{ link.url }}">
+                <span data-i18n-en="{{ link.title }}" data-i18n-zh="{{ link.zh_title | default: link.title }}">{{ shown_title }}</span>
+              </a>
+            </li>
+          {% endfor %}
+          <li id="lang-toggle" class="masthead__menu-item persist">
+            <a role="button" aria-label="language switch">
+              <span id="lang-en" style="font-weight: {% if current_lang == 'zh' %}500{% else %}700{% endif %}; opacity: {% if current_lang == 'zh' %}0.65{% else %}1{% endif %};">EN</span>
+              <span style="opacity: 0.5; margin: 0 4px;">/</span>
+              <span id="lang-zh" style="font-weight: {% if current_lang == 'zh' %}700{% else %}500{% endif %}; opacity: {% if current_lang == 'zh' %}1{% else %}0.65{% endif %};">中文</span>
+            </a>
+          </li>
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>

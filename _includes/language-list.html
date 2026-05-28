@@ -1,0 +1,19 @@
+{% assign current_lang = page.lang | default: site.locale | slice: 0, 2 %}
+
+<div class="language-list">
+  {% for item in site.data.languages %}
+    {% assign language_zh = item.language_zh | default: item.language %}
+    {% assign level_zh = item.level_zh | default: item.level %}
+    {% assign shown_language = item.language %}
+    {% assign shown_level = item.level %}
+    {% if current_lang == "zh" %}
+      {% assign shown_language = language_zh %}
+      {% assign shown_level = level_zh %}
+    {% endif %}
+
+    <div class="language-item">
+      <span class="language-item__name" data-i18n-en="{{ item.language | escape }}" data-i18n-zh="{{ language_zh | escape }}">{{ shown_language | escape }}</span>
+      <span class="language-item__level" data-i18n-en="{{ item.level | escape }}" data-i18n-zh="{{ level_zh | escape }}">{{ shown_level | escape }}</span>
+    </div>
+  {% endfor %}
+</div>

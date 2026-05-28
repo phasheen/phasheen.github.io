@@ -1,0 +1,21 @@
+phasheen:
+  name: "phasheen"
+  email: "phasheen@snu.ac.kr"
+  bio: "Ph.D. student, Biosystems Engineering."
+  zh_bio: "生物系统工程博士生"
+  location: "Seoul, Korea"
+  zh_location: "韩国首尔"
+  employer: "SNU"
+  zh_employer: "首尔大学"
+  github: "phasheen"
+
+phasheen_zh:
+  name: "phasheen"
+  email: "phasheen@snu.ac.kr"
+  bio: "生物系统工程博士生"
+  zh_bio: "生物系统工程博士生"
+  location: "韩国首尔"
+  zh_location: "韩国首尔"
+  employer: "首尔大学"
+  zh_employer: "首尔大学"
+  github: "phasheen"

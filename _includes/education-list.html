@@ -1,0 +1,64 @@
+{% assign current_lang = page.lang | default: site.locale | slice: 0, 2 %}
+{% assign major_label = "Major" %}
+{% assign integrated_label = "Integrated Major" %}
+{% if current_lang == "zh" %}
+  {% assign major_label = "专业" %}
+  {% assign integrated_label = "融合专业" %}
+{% endif %}
+
+<div class="education-list">
+  {% for item in site.data.education %}
+    {% assign degree_zh = item.degree_zh | default: item.degree %}
+    {% assign institution_zh = item.institution_zh | default: item.institution %}
+    {% assign major_zh = item.major_zh | default: item.major %}
+    {% assign integrated_major_zh = item.integrated_major_zh | default: item.integrated_major %}
+    {% assign dates_zh = item.dates_zh | default: item.dates %}
+    {% assign location_zh = item.location_zh | default: item.location %}
+
+    {% assign shown_degree = item.degree %}
+    {% assign shown_institution = item.institution %}
+    {% assign shown_major = item.major %}
+    {% assign shown_integrated_major = item.integrated_major %}
+    {% assign shown_dates = item.dates %}
+    {% assign shown_location = item.location %}
+    {% if current_lang == "zh" %}
+      {% assign shown_degree = degree_zh %}
+      {% assign shown_institution = institution_zh %}
+      {% assign shown_major = major_zh %}
+      {% assign shown_integrated_major = integrated_major_zh %}
+      {% assign shown_dates = dates_zh %}
+      {% assign shown_location = location_zh %}
+    {% endif %}
+
+    <article class="education-item">
+      <div class="education-item__header">
+        <h3 class="education-item__title">
+          <span data-i18n-en="{{ item.degree | escape }}" data-i18n-zh="{{ degree_zh | escape }}">{{ shown_degree | escape }}</span>
+        </h3>
+        <div class="education-item__meta">
+          <span data-i18n-en="{{ item.dates | escape }}" data-i18n-zh="{{ dates_zh | escape }}">{{ shown_dates | escape }}</span>
+        </div>
+      </div>
+
+      <p class="education-item__school">
+        <span data-i18n-en="{{ item.institution | escape }}" data-i18n-zh="{{ institution_zh | escape }}">{{ shown_institution | escape }}</span>
+        <span class="education-item__location">
+          <span data-i18n-en="{{ item.location | escape }}" data-i18n-zh="{{ location_zh | escape }}">{{ shown_location | escape }}</span>
+        </span>
+      </p>
+
+      <ul class="education-item__details">
+        <li>
+          <span data-i18n-en="Major" data-i18n-zh="专业">{{ major_label }}</span>:
+          <span data-i18n-en="{{ item.major | escape }}" data-i18n-zh="{{ major_zh | escape }}">{{ shown_major | escape }}</span>
+        </li>
+        {% if item.integrated_major %}
+          <li>
+            <span data-i18n-en="Integrated Major" data-i18n-zh="融合专业">{{ integrated_label }}</span>:
+            <span data-i18n-en="{{ item.integrated_major | escape }}" data-i18n-zh="{{ integrated_major_zh | escape }}">{{ shown_integrated_major | escape }}</span>
+          </li>
+        {% endif %}
+      </ul>
+    </article>
+  {% endfor %}
+</div>

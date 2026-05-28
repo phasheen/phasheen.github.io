@@ -1,0 +1,195 @@
+- name: "Qingdao"
+  country: "China"
+  label: "Qingdao, China"
+  note: "Visited"
+  lat: 36.0671
+  lng: 120.3826
+
+- name: "Linyi"
+  country: "China"
+  label: "Linyi, China"
+  note: "Visited"
+  lat: 35.1047
+  lng: 118.3564
+
+- name: "Jinan"
+  country: "China"
+  label: "Jinan, China"
+  note: "Visited"
+  lat: 36.6512
+  lng: 117.1201
+
+- name: "Yantai"
+  country: "China"
+  label: "Yantai, China"
+  note: "Visited"
+  lat: 37.4638
+  lng: 121.4479
+
+- name: "Zibo"
+  country: "China"
+  label: "Zibo, China"
+  note: "Visited"
+  lat: 36.8135
+  lng: 118.0549
+
+- name: "Beijing"
+  country: "China"
+  label: "Beijing, China"
+  note: "Visited"
+  lat: 39.9042
+  lng: 116.4074
+
+- name: "Harbin"
+  country: "China"
+  label: "Harbin, China"
+  note: "Visited"
+  lat: 45.8038
+  lng: 126.5350
+
+- name: "Changchun"
+  country: "China"
+  label: "Changchun, China"
+  note: "Visited"
+  lat: 43.8171
+  lng: 125.3235
+
+- name: "Chongqing"
+  country: "China"
+  label: "Chongqing, China"
+  note: "Visited"
+  lat: 29.5630
+  lng: 106.5516
+
+- name: "Wuhan"
+  country: "China"
+  label: "Wuhan, China"
+  note: "Visited"
+  lat: 30.5928
+  lng: 114.3055
+
+- name: "Changsha"
+  country: "China"
+  label: "Changsha, China"
+  note: "Visited"
+  lat: 28.2282
+  lng: 112.9388
+
+- name: "Nanjing"
+  country: "China"
+  label: "Nanjing, China"
+  note: "Visited"
+  lat: 32.0603
+  lng: 118.7969
+
+- name: "Hong Kong"
+  country: "China"
+  label: "Hong Kong, China"
+  note: "Visited"
+  lat: 22.3193
+  lng: 114.1694
+
+- name: "Hangzhou"
+  country: "China"
+  label: "Hangzhou, China"
+  note: "Visited"
+  lat: 30.2741
+  lng: 120.1551
+
+- name: "Seoul"
+  country: "Korea"
+  label: "Seoul, Korea"
+  note: "Visited"
+  lat: 37.5665
+  lng: 126.9780
+
+- name: "Gwangju"
+  country: "Korea"
+  label: "Gwangju, Korea"
+  note: "Visited"
+  lat: 35.1595
+  lng: 126.8526
+
+- name: "Busan"
+  country: "Korea"
+  label: "Busan, Korea"
+  note: "Visited"
+  lat: 35.1796
+  lng: 129.0756
+
+- name: "Daegu"
+  country: "Korea"
+  label: "Daegu, Korea"
+  note: "Visited"
+  lat: 35.8714
+  lng: 128.6014
+
+- name: "Jeju"
+  country: "Korea"
+  label: "Jeju, Korea"
+  note: "Visited"
+  lat: 33.4996
+  lng: 126.5312
+
+- name: "Tokyo"
+  country: "Japan"
+  label: "Tokyo, Japan"
+  note: "Visited"
+  lat: 35.6762
+  lng: 139.6503
+
+- name: "Osaka"
+  country: "Japan"
+  label: "Osaka, Japan"
+  note: "Visited"
+  lat: 34.6937
+  lng: 135.5023
+
+- name: "Kyoto"
+  country: "Japan"
+  label: "Kyoto, Japan"
+  note: "Visited"
+  lat: 35.0116
+  lng: 135.7681
+
+- name: "Amsterdam"
+  country: "Netherlands"
+  label: "Amsterdam, Netherlands"
+  note: "Visited"
+  lat: 52.3676
+  lng: 4.9041
+
+- name: "Wageningen"
+  country: "Netherlands"
+  label: "Wageningen, Netherlands"
+  note: "Visited"
+  lat: 51.9692
+  lng: 5.6654
+
+- name: "Toronto"
+  country: "Canada"
+  label: "Toronto, Canada"
+  note: "Visited"
+  lat: 43.6532
+  lng: -79.3832
+
+- name: "Singapore"
+  country: "Singapore"
+  label: "Singapore"
+  note: "Visited"
+  lat: 1.3521
+  lng: 103.8198
+
+- name: "Bangkok"
+  country: "Thailand"
+  label: "Bangkok, Thailand"
+  note: "Visited"
+  lat: 13.7563
+  lng: 100.5018
+
+- name: "Phuket"
+  country: "Thailand"
+  label: "Phuket, Thailand"
+  note: "Visited"
+  lat: 7.8804
+  lng: 98.3923

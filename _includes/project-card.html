@@ -1,0 +1,28 @@
+{% assign project = include.project %}
+{% assign title_zh = project.title_zh | default: project.title %}
+{% assign type_zh = project.type_zh | default: project.type %}
+{% assign description_zh = project.description_zh | default: project.description %}
+
+<article class="project-card">
+  {% if project.type %}
+    <div class="project-card__badge"><span data-i18n-en="{{ project.type }}" data-i18n-zh="{{ type_zh }}">{{ project.type }}</span></div>
+  {% endif %}
+  <h3 class="project-card__title"><span data-i18n-en="{{ project.title }}" data-i18n-zh="{{ title_zh }}">{{ project.title }}</span></h3>
+  <p class="project-card__description"><span data-i18n-en="{{ project.description }}" data-i18n-zh="{{ description_zh }}">{{ project.description }}</span></p>
+  {% if project.links %}
+    <div class="project-card__links">
+      {% for link in project.links %}
+        {% assign label_zh = link.label_zh | default: link.label %}
+        {% assign link_class = "project-chip" %}
+        {% if link.kind %}
+          {% assign link_class = link_class | append: " project-chip--" | append: link.kind %}
+        {% endif %}
+        {% if link.url contains "http" %}
+          <a class="{{ link_class }}" href="{{ link.url }}" target="_blank" rel="noopener"><span data-i18n-en="{{ link.label }}" data-i18n-zh="{{ label_zh }}">{{ link.label }}</span></a>
+        {% else %}
+          <a class="{{ link_class }}" href="{{ link.url | relative_url }}"><span data-i18n-en="{{ link.label }}" data-i18n-zh="{{ label_zh }}">{{ link.label }}</span></a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

@@ -1,0 +1,16 @@
+main:
+  - title: "Lab"
+    zh_title: "实验室"
+    url: /lab/
+
+  - title: "Projects"
+    zh_title: "项目"
+    url: /projects/
+
+  - title: "Publications"
+    zh_title: "发表"
+    url: /publications/
+
+  - title: "CV"
+    zh_title: "简历"
+    url: /cv/

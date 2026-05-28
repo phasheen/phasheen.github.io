@@ -1,0 +1,11 @@
+{% assign current_lang = page.lang | default: site.locale | slice: 0, 2 %}
+{% assign footer_built_text = "Built with" %}
+{% if current_lang == "zh" %}
+  {% assign footer_built_text = "基于" %}
+{% endif %}
+
+<div class="page__footer-copyright">
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.
+  <span data-i18n-en="Built with" data-i18n-zh="基于">{{ footer_built_text }}</span>
+  <a href="https://github.com/academicpages/academicpages.github.io">Academic Pages</a>.
+</div>

@@ -1,0 +1,19 @@
+{% assign place_countries = site.data.places | map: "country" | uniq %}
+
+<p class="places-summary">
+  <strong>
+    <span>Places:</span>
+    <span>{{ place_countries.size }}</span>
+    <span>countries</span>,
+    <span>{{ site.data.places.size }}</span>
+    <span>cities</span>.
+  </strong>
+</p>
+
+<p class="places-note">Cities I have visited are shown as green dots on the map.</p>
+
+<div class="places-map" id="places-map">
+  <div class="places-map__fallback">Visited cities map</div>
+</div>
+
+<script type="application/json" id="places-map-data">{{ site.data.places | jsonify }}</script>

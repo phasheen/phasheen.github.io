@@ -1,28 +1,19 @@
-# phasheen
+# phasheen.github.io
 
-Personal homepage for `phasheen.github.io`.
+Personal homepage for `phasheen`, based on the Academic Pages Jekyll template.
 
-The old Three.js point-cloud viewer has been moved out of this repository to:
+## References
 
-```text
-/home/mainuser/mount/xianghui/web-dev/threejs-viewer
-```
+- Template foundation: [Academic Pages](https://github.com/academicpages/academicpages.github.io).
+- Detailed interaction references, including the fast bilingual switch and compact travel map treatment, were informed by Lixin Xu's public homepage source: [DavidLXu/DavidLXu.github.io](https://github.com/DavidLXu/DavidLXu.github.io).
 
-This repository should stay focused on the bio/homepage only.
+## Local Preview
 
-## Version control
-
-This repository is initialized with `jj` in colocated mode, so it remains a
-normal GitHub Pages Git repository while local history can be managed with
-Jujutsu.
-
-Useful commands:
+This site needs Ruby and Bundler:
 
 ```bash
-jj status
-jj log
-jj diff
-jj describe -m "Update homepage"
-jj bookmark move main --to @
-jj git push
+bundle install
+bundle exec jekyll serve
 ```
+
+The 3DGS viewer and point-cloud viewer are intentionally separate projects. This repo should stay focused on the bio/homepage site.
